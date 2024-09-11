@@ -7,7 +7,6 @@ from ..inputs import create_embedding_matrix
 import torch.nn.functional as F
 
 
-# youtube dnn 的结构没有什么改变
 class YouTubeDNN(PLBaseModel):
     def __init__(self, user_feature_columns, item_feature_columns, 
                 num_sampled=5, user_dnn_hidden_units=[64, 32], 
